@@ -1,4 +1,4 @@
-# SDN Mininet Simulation - Network Delay Measurement Tool
+# SDN Mininet Simulation - Linear Topology with Firewall
 
 ## 1. Problem Statement
 The objective of this project is to deploy a custom OpenFlow SDN controller to manage a linear network topology. The controller is programmed with explicit match-action rules to handle dynamic forwarding, respond to link failures, and enforce access control (Firewall) by blocking specific MAC-to-MAC communications.
@@ -7,13 +7,13 @@ The objective of this project is to deploy a custom OpenFlow SDN controller to m
 The network utilizes a Custom Linear Topology (`h1-s1-s2-s3-h3` with `h2` attached to `s2`). This design was chosen specifically to highlight the vulnerability of non-redundant networks during failure states, and to test multi-hop firewall rules.
 
 **Execution:**
-\`\`\`bash
+
+```bash
 # Start Controller
 python3 pox.py my_controller
 
 # Start Mininet
 sudo mn --custom topo.py --topo linear_fw --controller=remote,port=6633 --mac --switch=ovsk
-\`\`\`
 
 ## 3. Test Cases
 
