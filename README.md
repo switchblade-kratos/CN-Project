@@ -30,12 +30,19 @@ sudo mn --custom topo.py --topo linear_fw --controller=remote,port=6633 --mac --
 * **Case 4 (Failure):** The `link s1 s2 down` command is issued. The controller's `PortStatus` event detects the failure and logs the severance. Because this is a linear topology, no failover path exists, resulting in total packet loss.
 
 ## 4. Proof of Execution
-*(Insert your 4 new screenshots here demonstrating the Allowed, Blocked, Normal, and Failure conditions)*
 
 * **Case 1 (Allowed):**
 
+<img width="940" height="295" alt="image" src="https://github.com/user-attachments/assets/e248d55d-081d-4354-af95-812a0f01cb63" />
+
 * **Case 2 (Blocked):**
+
+<img width="940" height="228" alt="image" src="https://github.com/user-attachments/assets/9f508033-2289-4d9f-801e-a5ce4d122f41" />
 
 * **Case 3 (Normal):**
 
+<img width="940" height="193" alt="image" src="https://github.com/user-attachments/assets/2307f7f2-0a0d-425b-ab9f-b47882a116e4" />
+
 * **Case 4 (Failure):**
+
+<img width="940" height="260" alt="image" src="https://github.com/user-attachments/assets/30c2d09f-3dca-419f-a4dc-25f00ead7d04" />
