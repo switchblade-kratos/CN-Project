@@ -14,6 +14,7 @@ python3 pox.py my_controller
 
 # Start Mininet
 sudo mn --custom topo.py --topo linear_fw --controller=remote,port=6633 --mac --switch=ovsk
+```
 
 ## 3. Test Cases
 
